@@ -25,8 +25,8 @@ Project is created with  a
 *  Made sustainably   
 *  Auto-resize   
 
-###   Live Demo  
-https://whoody-virus-2021-qvp5a.ondigitalocean.app/
+##  Live Demo
+https://v4y3sh.github.io/Whoody-VIRUS2021-main/
 
 
 ### Warnings
