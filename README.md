@@ -28,8 +28,6 @@ Project is created with  a
 ###   Live Demo  
 https://whoody-virus-2021-qvp5a.ondigitalocean.app/
 
-###  Github repo
-https://github.com/Suyash-Singh14/Whoody-VIRUS2021
 
 ### Warnings
 * Interactive features section breaks on resizing :(
