@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root{
+    --apricot: #FFCDB2;
+    --melon: #FFB4A2;
+    --pink: #E5989B;
+    --englishLavender: #B5838D;
+    --oldLavender: #6D6875;
+}
+
+body{overflow-y: hidden; overflow-x: hidden; width: 0;
+}
+
+.instructions{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    color: #575757;
+    animation: blink 4s ease-in 8s infinite;
+}
+.features{
+    width: 550vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.upper{
+    height: 89vh;
+    background: linear-gradient(to right, #f0c27b, #7b4178);;
+    border: 1px solid black;
+    display: flex;
+    z-index: -1;
+    transition: transform 200ms linear;
+    position: absolute;
+}
+
+.lower{
+    position: absolute;
+    top: 79vh;
+    width: 550vw;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 21vh;
+    transition: transform 200ms linear;
+}
+
+.features .car{
+    height: 75px;
+    width: 160px;
+    position: absolute;
+    left: 20vw;
+    top: calc(89vh - 75px);
+    /* animation: suspension 1s linear infinite; */
+}
+
+.intro{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    width: 50%;
+    text-align: center;
+} 
+
+.text .title{
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.text .tagline{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #000000ab;
+    letter-spacing: 3px;
+    margin-bottom: 3em;
+}
+
+.text .desc{
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature{
+    width: 80vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.block div{
+    height: 33vh;
+    width: 102vw;
+    background-color: #5a5ad2;
+}
+
+.loading, .logo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.loading .loading-text{
+    font-size: 5em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+
+.loading .circles{
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.logo .small-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .small-text .company{
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    color: white;
+    margin: 0 10px;
+}
+
+.logo .small-text .line{
+    padding: 0 50px;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.logo .large-text h1{
+    color: white;
+    font-size: 5em;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.contact-container{
+    margin: 10vh 0;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    background: #ffb4a2;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+.container .content .left-side{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+.content .left-side .details i{
+    font-size: 30px;
+    color: #463b58;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 400;
+}
+.content .left-side .details .text1,
+.content .left-side .details .text2{
+    font-size: 14px;
+    color: #463b58;
+}
+/* .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #463b58;
+}
+.input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.input-box input,
+.input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #463b58  ;
+    border-radius: 6px;
+    padding: 5px 25px;
+    resize: none;
+}
+.input-box [type="text"]{
+    color: white;
+}
+.message-box{
+    min-height: 110px;
+}
+::placeholder {
+    color: white;
+    opacity: 0.5; 
+  } */
+
+.button{
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #463b58 ;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    margin: 10px auto;
+    transition: all 0.3 ease;
+}
+.button a{
+    display: block;
+    width: 100%;
+}
+.button:hover{
+    background: #6D6875;
+}
+.loading{
+    animation: blink 1s linear 3;
+}
+
+.logo{
+    opacity: 1;
+    /* animation: show 3s linear 3.5s; */
+}
+
+@keyframes suspension{    
+    100%{transform: translateY(0px);} 
+    50%{transform: translateY(3px);}
+    0%{transform: translateY(0px);}
+}
+
+@keyframes blink{    
+    100%{opacity: 0;}
+    0%{opacity: 1;}
+}
+
+@keyframes show{    
+    50%{opacity: 1;}
+    0%{opacity: 0;}
+}
+
+.contact{
+    width: 50vw;
+    border: 1px solid white;
+    height: 80%;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width:1200px){
+    .text .title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:950px){
+    .feature, .intro{
+        height: 100%;
+    }
+    .text .title {
+        font-size: 2em;
+    }
+    .button{width: 75%}
+}
+
+@media(max-width:700px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .features{display: none;}
+    .mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        background-color: #19181a;
+        color: white;
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+    }
+    .mobile .buttons{
+        width: 100%;
+        display: flex;
+        margin-top: 2em;
+    }
+    .mobile .button{
+        width: 40%;
+        font-weight: bold;
+    }
+}
